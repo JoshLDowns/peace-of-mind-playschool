@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "@reach/router";
+import FooterForm from "./FooterForm.js";
 
 class Footer extends Component {
   constructor() {
@@ -8,6 +8,10 @@ class Footer extends Component {
       display: "footer-docked",
       apply: "Apply",
       footerText: "footer-text full-opacity",
+      footerFormDisplay: true,
+      formName: "",
+      formEmail: "",
+      formMessage: "",
     };
   }
 
@@ -25,6 +29,23 @@ class Footer extends Component {
     });
   };
 
+  handleInput = (e) => {
+    this.setState({
+      [`${e.target.id.split("-")[0]+e.target.id.split("-")[1].slice(0,1).toUpperCase()+e.target.id.split("-")[1].slice(1)}`] : e.target.value
+    })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    let formObj = {
+      name: this.state.formName,
+      email: this.state.formEmail,
+      message: this.state.formMessage
+    }
+    console.log(formObj)
+    //To-Do: fetch POST request to server, attach email to sendgrid, display thank you message on success
+  }
+
   render() {
     return (
       <div id="footer" className={this.state.display}>
@@ -39,6 +60,21 @@ class Footer extends Component {
           <p id="apply-button" onClick={this.handleApply}>
             {this.state.apply}
           </p>
+        </div>
+        <div id="footer-form-wrapper">
+          <h2 className="footer-text footer-title">
+            We are currently full, but feel free to inquire about future
+            availability!
+          </h2>
+          {this.state.footerFormDisplay && (
+            <FooterForm
+              handleInput={this.handleInput}
+              handleSubmit={this.handleSubmit}
+              formName={this.state.formName}
+              formEmail={this.state.formEmail}
+              formMessage={this.state.formMessage}
+            />
+          )}
         </div>
       </div>
     );

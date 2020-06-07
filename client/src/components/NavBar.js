@@ -28,7 +28,7 @@ class NavBar extends Component {
               this.props.currentPage === "/tour" ? "clicked-link" : "link"
             }
           >
-            Take a Tour
+            Gallery
           </Link>
           <Link
             to="/handbook"
