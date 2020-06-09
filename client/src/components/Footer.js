@@ -31,20 +31,48 @@ class Footer extends Component {
 
   handleInput = (e) => {
     this.setState({
-      [`${e.target.id.split("-")[0]+e.target.id.split("-")[1].slice(0,1).toUpperCase()+e.target.id.split("-")[1].slice(1)}`] : e.target.value
-    })
-  }
+      [`${
+        e.target.id.split("-")[0] +
+        e.target.id.split("-")[1].slice(0, 1).toUpperCase() +
+        e.target.id.split("-")[1].slice(1)
+      }`]: e.target.value,
+    });
+  };
+
+  resetForm = () => {
+    this.setState({ formName: "", formEmail: "", formMessage: "" });
+  };
 
   handleSubmit = (e) => {
-    e.preventDefault()
-    let formObj = {
-      name: this.state.formName,
-      email: this.state.formEmail,
-      message: this.state.formMessage
+    e.preventDefault();
+    if (
+      this.state.formName === "" ||
+      this.state.formEmail === "" ||
+      this.state.formMessage === ""
+    ) {
+      return alert(
+        "Please fill in all of the fields! Thank you for trying to reach out!"
+      );
     }
-    console.log(formObj)
-    //To-Do: fetch POST request to server, attach email to sendgrid, display thank you message on success
-  }
+    fetch("/newContact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: this.state.formName,
+        email: this.state.formEmail,
+        message: this.state.formMessage,
+      }),
+    })
+      .then((res) => res.json())
+      .then((jsonObj) => {
+        this.setState({
+          status: jsonObj.status,
+        });
+      });
+    this.resetForm();
+  };
 
   render() {
     return (
@@ -66,7 +94,7 @@ class Footer extends Component {
             We are currently full, but feel free to inquire about future
             availability!
           </h2>
-          {this.state.footerFormDisplay && (
+          {this.state.footerFormDisplay !== "thank-you" && (
             <FooterForm
               handleInput={this.handleInput}
               handleSubmit={this.handleSubmit}

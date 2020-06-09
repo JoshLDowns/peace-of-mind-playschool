@@ -16,6 +16,17 @@ class PhotoTour extends Component {
         "py8-thumb",
         "py9-thumb",
       ],
+      daycareThumbArray: [
+        "dc1-thumb",
+        "dc2-thumb",
+        "dc3-thumb",
+        "dc4-thumb",
+        "dc5-thumb",
+        "dc6-thumb",
+        "dc7-thumb",
+        "dc8-thumb",
+        "dc9-thumb",
+      ],
       atplayThumbArray: [
         "ap1-thumb",
         "ap2-thumb",
@@ -36,6 +47,9 @@ class PhotoTour extends Component {
         <div className="photo-carousel-container">
           <h1 className="title">The Play Yard</h1>
           <Carousel currentPhoto="/images/playyard/py1.png" folder="playyard" thumbArray={this.state.playyardThumbArray} />
+          <br />
+          <h1 className="title">The Daycare</h1>
+          <Carousel currentPhoto="/images/daycare/dc1.png" folder="daycare" thumbArray={this.state.daycareThumbArray} />
           <br />
           <h1 className="title">At Play</h1>
           <Carousel currentPhoto="/images/atplay/ap1.png" folder="atplay" thumbArray={this.state.atplayThumbArray} />

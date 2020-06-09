@@ -26,21 +26,25 @@ class Home extends Component {
             <div className="scroll-div">
               <p className="philosophy">
                 I opened Peace of Mind Playschool in 2018 to provide families
-                with a high quality, structured childcare and preschool program.
-                My goal is to provide a developmentally appropriate program that
-                respects each child as an individual in a loving environment
-                that is fun, educational and safe. I will provide curriculum and
-                opportunities for growth that are developmentally appropriate,
-                help children feel confident and self-reliant, and develop a
-                sense of self-worth and foster good self-esteem. I will always
-                take time to listen to their thoughts, feelings and ideas. My
-                program reflects the understanding that play is essential to
-                children’s health and well-being and foundational to their
-                learning. I promise to nurture your child, provide protection,
-                encouragement, security and stimulation. Families are assured
-                that non- discrimination and respect for each child and their
-                family and culture is always maintained in a professional
-                manner.
+                with high quality, affordable child care with the belief that
+                children must be respected, and that children love to learn. I
+                believe in providing children with an environment where they
+                have space to explore and create, collaborate with peers and
+                learn through nature. Nature offers infinite ways to support a
+                child’s cognitive, physical, and emotional development, and
+                interacting with natural environments and materials allows
+                children to learn by doing, and experiment with ideas. When
+                children are engaged in learning about science and nature, they
+                are also learning strategies for active exploration, thinking
+                and reasoning, and developing working theories for making sense
+                of the natural, social, physical and material worlds around
+                them. By promoting learning through nature, I hope to foster the
+                development of nurturing, peaceful, and caring citizens. My
+                program reflects the understanding that play and outdoor
+                exploration is essential to children’s health and well-being,
+                and foundational to their learning. I promise to nurture your
+                child, provide a safe and loving environment, and give them the
+                freedom to explore and create.
               </p>
             </div>
           </div>

@@ -13,22 +13,26 @@ class Handbook extends Component {
             <div className="scroll-div">
               <p className="handbook-text">
                 <span className="strong-text">PHILOSOPHY:</span> I opened Peace
-                of Mind Playschool in 2018 to provide families with a high
-                quality, structured childcare and preschool program. My goal is
-                to provide a developmentally appropriate program that respects
-                each child as an individual in a loving environment that is fun,
-                educational and safe. I will provide curriculum and
-                opportunities for growth that are developmentally appropriate,
-                help children feel confident and self-reliant, and develop a
-                sense of self-worth and foster good self-esteem. I will always
-                take time to listen to their thoughts, feelings and ideas. My
-                program reflects the understanding that play is essential to
-                children’s health and well-being and foundational to their
-                learning. I promise to nurture your child, provide protection,
-                encouragement, security and stimulation. Families are assured
-                that non- discrimination and respect for each child and their
-                family and culture is always maintained in a professional
-                manner.
+                of Mind Playschool in 2018 to provide families with high
+                quality, affordable child care with the belief that children
+                must be respected, and that children love to learn. I believe in
+                providing children with an environment where they have space to
+                explore and create, collaborate with peers and learn through
+                nature. Nature offers infinite ways to support a child’s
+                cognitive, physical, and emotional development, and interacting
+                with natural environments and materials allows children to learn
+                by doing, and experiment with ideas. When children are engaged
+                in learning about science and nature, they are also learning
+                strategies for active exploration, thinking and reasoning, and
+                developing working theories for making sense of the natural,
+                social, physical and material worlds around them. By promoting
+                learning through nature, I hope to foster the development of
+                nurturing, peaceful, and caring citizens. My program reflects the
+                understanding that play and outdoor exploration is essential to
+                children’s health and well-being, and foundational to their
+                learning. I promise to nurture your child, provide a safe and
+                loving environment, and give them the freedom to explore and
+                create.
               </p>
               <p className="handbook-text">
                 <span className="strong-text">
@@ -116,7 +120,9 @@ class Handbook extends Component {
                 absence, that person will have experience caring for children
                 and will be required to be first aid and CPR certified.{" "}
               </p>
-              <p className="strong-text handbook-text">TUITION POLICY AND CHARGES</p>
+              <p className="strong-text handbook-text">
+                TUITION POLICY AND CHARGES
+              </p>
               <ul className="handbook-text">
                 <li>
                   Full time: $175.00 per week for each child over 2 yrs old (if
@@ -175,6 +181,7 @@ class Handbook extends Component {
               <p className="handbook-text">
                 <span className="strong-text">DAILY SCHEDULE</span>
                 <br />
+                <br />
                 <span className="strong-text">
                   INFANTS’ DAILY SCHEDULE:
                 </span>{" "}
@@ -189,20 +196,31 @@ class Handbook extends Component {
                 curriculum as possible and have one nap fall within the same nap
                 time as the other children (12:30 to 2:30/3:00).
               </p>
-              <p className="handbook-text">
-                <span className="strong-text">
-                  TODDLERS’ AND PRESCHOOLERS’ DAILY SCHEDULE:
-                </span>
-                7:xx (open time may vary) open/free play 8:30 circle/meeting
-                time; songs, ABC’s, numbers, weather &amp; special events 9:00
-                snack 9:30 project/activity time: arts &amp; crafts, playdoh,
-                science, baking, etc. (this may take place outside, as weather
-                permits) 10:00 outdoor play/gross motor play 11:30 quiet play,
-                reading (while lunch is prepared) 11:45 lunch 12:30 nap/rest
-                time, quiet time (approximately 2 hours) 2:45 snack 3:15 outdoor
-                play (weather permitting) or choice time; blocks, puzzles,
-                books, games.
+              <p className="handbook-text strong-text">
+                TODDLERS’ AND PRESCHOOLERS’ DAILY SCHEDULE:
               </p>
+              <ul className="handbook-text">
+                <li>7:xx (open time may vary) open/free play</li>
+                <li>
+                  8:30 circle/meeting time; songs, ABC’s, numbers, weather &amp;
+                  special events
+                </li>
+                <li>9:00 snack</li>
+                <li>
+                  9:30 project/activity time: arts &amp; crafts, playdoh,
+                  science, baking, etc. (this may take place outside, as weather
+                  permits)
+                </li>
+                <li>10:00 outdoor play/gross motor play</li>
+                <li>11:30 quiet play, reading (while lunch is prepared)</li>
+                <li>11:45 lunch</li>
+                <li>12:30 nap/rest time, quiet time (approximately 2 hours)</li>
+                <li>2:45 snack</li>
+                <li>
+                  3:15 outdoor play (weather permitting) or choice time; blocks,
+                  puzzles, books, games
+                </li>
+              </ul>
               <p className="handbook-text">
                 Your ideas and suggestions about your child’s day are always
                 welcome. Birthdays are always a special event, and we will
