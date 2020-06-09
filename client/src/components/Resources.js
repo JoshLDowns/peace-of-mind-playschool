@@ -80,7 +80,7 @@ class Resources extends Component {
               <div className="docs">
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/parent-provider-handbook.pdf`}
+                  href={`/pdffiles/parent-provider-handbook.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,7 +88,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/enrollment-agreement.pdf`}
+                  href={`/pdffiles/enrollment-agreement.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -96,7 +96,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/general-health-examination-form.pdf`}
+                  href={`/pdffiles/general-health-examination-form.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -104,7 +104,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/medication-administration-form.pdf`}
+                  href={`/pdffiles/medication-administration-form.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -112,7 +112,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/medical-communication-authorization.pdf`}
+                  href={`/pdffiles/medical-communication-authorization.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -125,7 +125,7 @@ class Resources extends Component {
               <div className="docs">
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/asthma-action-plan.pdf`}
+                  href={`/pdffiles/asthma-action-plan.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,7 +133,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/permission-form-but-spray.pdf`}
+                  href={`/pdffiles/permission-form-but-spray.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -141,7 +141,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/permission-form-sunscreen.pdf`}
+                  href={`/pdffiles/permission-form-sunscreen.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -149,7 +149,7 @@ class Resources extends Component {
                 </a>
                 <a
                   className="resource-link"
-                  href={`${window.location.host}/pdffiles/permission-form-water-play.pdf`}
+                  href={`/pdffiles/permission-form-water-play.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
