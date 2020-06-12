@@ -9,7 +9,7 @@ class Resources extends Component {
   render() {
     return (
       <div id="resources">
-        <div className="page-break">
+        <div className="page-break mobile-break">
           <div className="break-one"></div>
           <div className="break-two"></div>
         </div>
