@@ -82,9 +82,12 @@ class Footer extends Component {
           <div className="break-one"></div>
         </div>
         <div id="footer-control">
-          <p className={this.state.footerText}>
-            Located atop Georgia Mt. Vermont - 999-999-9999
-          </p>
+          <div id="footer-address">
+            <p className={this.state.footerText}>
+              Located atop Georgia Mt. Vermont
+            </p>
+            <p className={this.state.footerText}>802.578.5451</p>
+          </div>
           <p id="apply-button" onClick={this.handleApply}>
             {this.state.apply}
           </p>

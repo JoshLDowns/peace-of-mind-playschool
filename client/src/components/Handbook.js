@@ -4,10 +4,6 @@ class Handbook extends Component {
   render() {
     return (
       <div id="handbook">
-        <div className="page-break mobile-break">
-          <div className="break-one"></div>
-          <div className="break-two"></div>
-        </div>
         <div id="handbook-container">
           <div id="handbook-text-wrapper">
             <div className="scroll-div">

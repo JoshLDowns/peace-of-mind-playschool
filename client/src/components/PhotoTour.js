@@ -40,11 +40,11 @@ class PhotoTour extends Component {
   render() {
     return (
       <div id="photo-tour">
-        <div className="page-break mobile-break">
-          <div className="break-one"></div>
-          <div className="break-two"></div>
-        </div>
+        <div id="photo-tour-body">
+
         <div className="photo-carousel-container">
+          <div className="photo-scroll-div">
+
           <h1 className="title">The Play Yard</h1>
           <Carousel currentPhoto="/images/playyard/py1.png" folder="playyard" thumbArray={this.state.playyardThumbArray} />
           <br />
@@ -53,6 +53,8 @@ class PhotoTour extends Component {
           <br />
           <h1 className="title">At Play</h1>
           <Carousel currentPhoto="/images/atplay/ap1.png" folder="atplay" thumbArray={this.state.atplayThumbArray} />
+          </div>
+        </div>
         </div>
       </div>
     );
