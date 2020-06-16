@@ -828,3 +828,17 @@ textarea {
   }
 }
 
+@media (max-height: 500px) {
+  #footer {
+    display: none;
+  }
+
+  #home, #photo-tour, #handbook, #resources {
+    height: Calc(100vh - 60px);
+  }
+
+  #home-img-wrapper {
+    margin-top: 10px;
+  }
+}
+
