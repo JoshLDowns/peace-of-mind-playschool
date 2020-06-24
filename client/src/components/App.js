@@ -7,6 +7,7 @@ import PhotoTour from "./PhotoTour.js";
 import Handbook from "./Handbook.js";
 import Resources from "./Resources.js";
 import Footer from "./Footer.js";
+import About from "./About.js";
 
 class App extends Component {
   constructor() {
@@ -53,6 +54,7 @@ class App extends Component {
         <NavBar currentPage={this.state.currentPage} handleLink={this.handleLink} />
         <Router>
           <Home path="/" />
+          <About path="/about" />
           <PhotoTour path="/tour" />
           <Handbook path="/handbook" />
           <Resources path="/resources" />

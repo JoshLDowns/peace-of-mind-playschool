@@ -1,6 +1,6 @@
 import React from "react";
 
-function FooterForm(props) {
+const FooterForm = (props) => {
   return (
     <div id="footer-form">
       <div id="form-left">

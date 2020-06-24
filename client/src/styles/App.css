@@ -132,8 +132,8 @@ html {
 
 #main-links {
   display: flex;
-  width: 40%;
-  min-width: 600px;
+  width: 50%;
+  min-width: 650px;
   height: 100%;
   align-items: center;
   justify-content: space-between;
@@ -151,7 +151,8 @@ html {
 /* ---- Home Page Styles ---- */
 
 #home,
-#handbook {
+#handbook,
+#about {
   height: Calc(100vh - 155px);
   width: 100%;
 }
@@ -194,7 +195,7 @@ html {
   display: none;
 }
 
-.philosophy,
+.display-text,
 .footer-text {
   font-family: itim;
   font-size: 1.5rem;
@@ -465,6 +466,64 @@ textarea {
 }
 /* ---- ---- ---- ---- */
 
+/* ---- About Styles ---- */
+
+#about-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  width: 80%;
+  min-width: 600px;
+  height: Calc(100vh - 170px);
+  max-height: 675px;
+  padding: 25px;
+  border: 5px solid #736372;
+  background-color: rgb(250, 250, 250, 0.5);
+  margin: 20px auto 75px auto;
+}
+
+.about-img-text-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-img-wrapper {
+  border: 5px solid #736372;
+  width: 30%;
+  padding: 5px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.about-text-wrapper {
+  width: 65%;
+}
+
+.about-text-wrapper p {
+  font-family: itim;
+  margin: 0px;
+  font-size: 1.25rem;
+}
+
+.mobile-top {
+  border-bottom: 2px solid #153243;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---- ---- ---- ---- */
+
 /* ---- Resources Styles ---- */
 
 #resources {
@@ -623,6 +682,26 @@ textarea {
     margin-left: 0px;
     margin-bottom: 10px;
   }
+
+  /* ---- About ---- */
+
+  .about-img-text-wrapper {
+    flex-direction: column;
+  }
+
+  .about-img-wrapper {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  .about-text-wrapper {
+    width: 90%;
+  }
+
+  .mobile-top {
+    flex-direction: column-reverse;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -631,7 +710,8 @@ textarea {
   #home,
   #photo-tour,
   #handbook,
-  #resources {
+  #resources,
+  #about {
     height: Calc(100vh - 115px);
   }
 
@@ -725,9 +805,23 @@ textarea {
     height: 75px;
   }
 
+  /* ---- About ---- */
+
+  #about-body {
+    overflow: hidden;
+    max-height: 5000px;
+    height: auto;
+    min-width: 100px;
+    margin-bottom: 25px;
+  }
+
+  .about-img-wrapper {
+    min-width: 250px;
+  }
+
   /* ---- Resources ---- */
 
-  #resources {
+  #resources, #about {
     overflow-y: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;

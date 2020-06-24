@@ -32,7 +32,10 @@ class PhotoTour extends Component {
         "ap2-thumb",
         "ap3-thumb",
         "ap4-thumb",
-        "ap5-thumb"
+        "ap5-thumb",
+        "ap6-thumb",
+        "ap7-thumb",
+        "ap8-thumb",
       ]
     };
   }

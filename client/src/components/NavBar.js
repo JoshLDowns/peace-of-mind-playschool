@@ -35,6 +35,17 @@ class NavBar extends Component {
             Home
           </Link>
           <Link
+            to="/about"
+            id="/about"
+            onClick={() => {
+              this.props.handleLink();
+              this.handleDropDown();
+            }}
+            className={this.props.currentPage === "/about" ? "clicked-link" : "link"}
+          >
+            About
+          </Link>
+          <Link
             to="/tour"
             id="/tour"
             onClick={() => {
@@ -94,6 +105,16 @@ class NavBar extends Component {
               }
             >
               Home
+            </Link>
+            <Link
+              to="/about"
+              id="/about"
+              onClick={this.props.handleLink}
+              className={
+                this.props.currentPage === "/about" ? "clicked-link" : "link"
+              }
+            >
+              About
             </Link>
             <Link
               to="/tour"
