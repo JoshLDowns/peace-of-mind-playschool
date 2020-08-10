@@ -1,20 +1,40 @@
 import React from "react";
 import logo from "../styles/src_img/Logo.png";
 
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  ...theme.global,
+}));
+
 const Home = () => {
+  const classes = useStyles();
+
   return (
-    <div id="home">
-      <div id="home-body">
-        <div id="home-img-wrapper">
-          <img
-            src={logo}
-            className="logo-large"
-            alt="Peace of Mind Playschool"
-          />
-        </div>
-        <div id="home-text">
-          <div className="scroll-div">
-            <p className="display-text">
+    <>
+      <Container className={classes.mainWrapper}>
+        <Grid container spacing={6} alignItems="center" justify="center">
+          <Grid item xl={4} lg={4} sm={6} xs={11}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src={logo}
+                className={classes.logoLarge}
+                alt="Peace of Mind Playschool"
+              />
+            </div>
+          </Grid>
+          <Grid item sm={10} xs={11} component={Paper} classes={{root: classes.paperRoot}}>
+            <Typography className={classes.bodyText} variant="body1">
               I opened Peace of Mind Playschool in 2018 to provide families with
               high quality, affordable child care with the belief that children
               must be respected, and that children love to learn. I believe in
@@ -35,11 +55,13 @@ const Home = () => {
               learning. I promise to nurture your child, provide a safe and
               loving environment, and give them the freedom to explore and
               create.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+            </Typography>
+          </Grid>
+        </Grid>
+        <br />
+        <br />
+      </Container>
+    </>
   );
 };
 

@@ -2,22 +2,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 /* ---- General Styles ---- */
+
 html {
   background: url(../styles/src_img/background.png) no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 100%;
-  z-index: 0;
+  fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body {
+  background-color: rgb(250, 250, 250, 0) !important;
 }
 
 #main-container {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  flex-grow: 1;
+  margin: 0 auto 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  -webkit-overflow-scrolling: touch;
+  
 }
+
+
+
+
+
+
 
 .page-break {
   width: 100%;
@@ -153,7 +166,7 @@ html {
 #home,
 #handbook,
 #about {
-  height: Calc(100vh - 155px);
+  
   width: 100%;
 }
 
