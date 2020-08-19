@@ -94,6 +94,7 @@ const PhotoTour = () => {
               xs={11}
               component={Paper}
               classes={{ root: classes.paperRoot }}
+              className={classes.titleBar}
               style={{ textAlign: "center", marginBottom: "20px" }}
             >
               <Typography className={classes.title}>Gallery</Typography>
@@ -152,6 +153,7 @@ const PhotoTour = () => {
             xs={11}
             component={Paper}
             classes={{ root: classes.paperRoot }}
+            className={classes.titleBar}
             style={{ textAlign: "center", marginBottom: "20px" }}
           >
             <Typography className={classes.title}>Gallery</Typography>

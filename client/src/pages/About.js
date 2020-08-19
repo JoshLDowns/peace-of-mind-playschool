@@ -21,6 +21,7 @@ const About = () => {
             xs={11}
             component={Paper}
             classes={{ root: classes.paperRoot }}
+            className={classes.titleBar}
             style={{ textAlign: "center", marginBottom: "20px" }}
           >
             <Typography className={classes.title}>About Me</Typography>
@@ -60,7 +61,7 @@ const About = () => {
               with children when I grew up. I spent 17 years in banking, then
               had my second child and just knew that was the right time to open
               my child care business. I was fortunate enough to have family
-              caring for my children, however it’s still killed me to leave them
+              caring for my children, however it still killed me to leave them
               every day. I knew my family could not do it forever, and I
               struggled to find a childcare provider that I could trust. My goal
               has always been to provide high-quality child care where

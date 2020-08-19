@@ -57,6 +57,12 @@ export default {
       fontSize: "1.1rem",
       marginBottom: "15px"
     },
+    titleBar: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: "16px"
+    },
     logoSmall: {
       height: "50px",
       width: "50px",
