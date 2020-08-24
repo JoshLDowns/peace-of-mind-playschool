@@ -32,7 +32,7 @@ async function getMessage(req, res) {
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
-    to: "josh.lloyd.downs.com",
+    to: "josh.lloyd.downs@gmail.com",
     from: email,
     subject: "New Contact from Peace of Mind Playschool Mail",
     text: `${message}\nFrom: ${name}`,
